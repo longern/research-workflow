@@ -7,7 +7,7 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 
 import "katex/dist/katex.min.css";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 /**
  * Preprocesses LaTeX content by replacing delimiters and escaping certain characters.
@@ -106,7 +106,7 @@ function Markdown({ children }: { children: string }) {
               PreTag="div"
               children={String(children).replace(/\n$/, "")}
               language={match[1]}
-              style={dark}
+              style={oneLight}
             />
           ) : (
             <code {...props} className={className}>

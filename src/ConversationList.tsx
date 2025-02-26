@@ -111,7 +111,6 @@ function ConversationList({
                   >
                     <ListItemButton
                       selected={conversation.id === selectedConversation}
-                      sx={{ minHeight: "48px" }}
                       onClick={() => onSelect(conversation)}
                     >
                       {conversation.title}
